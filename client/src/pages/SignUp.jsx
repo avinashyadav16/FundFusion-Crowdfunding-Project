@@ -15,20 +15,20 @@ import { Checkbox } from "@chakra-ui/react";
 
 import { useContext } from "react";
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
-import { AuthContext } from "../components/context";
+// import { useNavigate } from "react-router-dom";
 import axios from "axios";
 
+import { AuthContext } from "../components/context";
+
 function SignUp() {
-  //const [isOpenNow, setisOpenNow] = useState(false);
-  //const { isOpen, onOpen, onClose } = useDisclosure();
   const onClose = () => {
     dispatch({ type: "closesingup" });
     console.log(state);
   };
+
   const { state, dispatch } = useContext(AuthContext);
-  //console.log(state);
-  const navigate = useNavigate();
+
+  // const navigate = useNavigate();
 
   const initaldata = {
     firstName: "",
@@ -38,16 +38,16 @@ function SignUp() {
   };
 
   const [data, setdata] = useState(initaldata);
+
   const handleInput = (e) => {
     const name = e.target.name;
     const value = e.target.value;
     setdata({ ...data, [name]: value });
   };
-  //console.log(data);
 
   const handlesignup = () => {
     axios
-      .post("http://localhost:8080/signup", {
+      .post("http://localhost:3000/signup", {
         firstName: data.firstName,
         lastName: data.lastName,
         email: data.email,
@@ -82,7 +82,7 @@ function SignUp() {
               Welcome!
             </Heading>
             <Text textAlign={"center"} fontSize={"16px"} color={"#6a6a6a"}>
-              Sign up to join Indiegogo.
+              Sign up to join FundFusion.
             </Text>
           </ModalHeader>
           <ModalCloseButton />
@@ -110,7 +110,7 @@ function SignUp() {
                   variant="filled"
                   borderColor={"#ddd"}
                   size="md"
-                  placeholder="Last Name"
+                  placeholder="Your Last Name"
                   _focus={{ borderColor: "#2a2a2a" }}
                   type="text"
                   name="lastName"
@@ -151,17 +151,10 @@ function SignUp() {
             </Stack>
             <Stack mt={5} spacing={5}>
               <Checkbox colorScheme="pink" defaultChecked>
-                <Text fontSize="16px">
-                  {" "}
-                  Sign me up for the Indiegogo newsletter
-                </Text>
+                <Text fontSize="14px"> Subscribe to FundFusion newsletter</Text>
               </Checkbox>
               <Checkbox colorScheme="pink" defaultChecked>
-                <Text fontSize="16px">
-                  {" "}
-                  I agree to the Terms of Use and have read and understand the
-                  Privacy Policy
-                </Text>
+                <Text fontSize="14px"> Terms of Use and Privacy Policy</Text>
               </Checkbox>
             </Stack>
             <Stack>
@@ -194,7 +187,7 @@ function SignUp() {
                   marginBottom: "10px",
                 }}
               >
-                CONTINUE WITH FACEBOOK
+                CONTINUE WITH GOOGLE
               </button>
             </Stack>
             <Stack

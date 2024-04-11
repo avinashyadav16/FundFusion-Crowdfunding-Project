@@ -14,14 +14,14 @@ import { ImMobile2 } from "react-icons/im";
 import { GiSchoolBag } from "react-icons/gi";
 import { TbDeviceWatchStats2 } from "react-icons/tb";
 import { BsFillSpeakerFill } from "react-icons/bs";
-
 import { GiFilmProjector } from "react-icons/gi";
 import { ChevronRightIcon } from "@chakra-ui/icons";
+
 import Navbar from "./Navbar";
 import Slider1 from "./Slider1";
 import Slider2 from "./Slider2";
-import "./home.css";
 import Footer from "./Footer";
+import "./home.css";
 
 function Home() {
   return (
@@ -37,11 +37,11 @@ function Home() {
         <Slider1 />
         <Container maxW={"100%"} mt={4} mb={5}>
           <Heading size="lg" fontWeight={400}>
-            Find it first on Indiegogo.
+            Find It First On FundFusion.
           </Heading>
           <Text>
-            Indiegogo is where early adopters and innovation seekers find
-            lively, imaginative tech before it hits the mainstream.
+            FundFusion is where early adopters and innovation seekers find
+            lively, imaginative support before it hits the mainstream.
           </Text>
           <Box
             display={"flex"}

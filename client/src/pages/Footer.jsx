@@ -8,6 +8,7 @@ import {
   Stack,
   Text,
 } from "@chakra-ui/react";
+
 import { Icon } from "@chakra-ui/react";
 import { HiMailOpen } from "react-icons/hi";
 import { CgFacebook } from "react-icons/cg";
@@ -18,7 +19,9 @@ import {
   FaLinkedinIn,
   FaSpotify,
 } from "react-icons/fa";
+
 import "./footer.css";
+
 function Footer() {
   return (
     <>
@@ -26,33 +29,35 @@ function Footer() {
         <Stack textAlign={"left"} direction={"row"} spacing={"100px"}>
           <Box>
             <List>
-              <Text>EXPLORE</Text>
-              <ListItem fontSize="16px">What We Do</ListItem>
-              <ListItem fontSize="16px">Funding</ListItem>
+              <strong>EXPLORE</strong>
+              <ListItem fontSize="13px">What We Do</ListItem>
+              <ListItem fontSize="13px">Funding</ListItem>
             </List>
           </Box>
+
           <Box>
             <List>
-              <Text>ABOUT</Text>
-              <ListItem fontSize="16px">About Us</ListItem>
-              <ListItem fontSize="16px">Blog</ListItem>
-              <ListItem fontSize="16px">Trust & Safety</ListItem>
-              <ListItem fontSize="16px">Help & Support</ListItem>
-              <ListItem fontSize="16px">Press</ListItem>
-              <ListItem fontSize="16px">Contact</ListItem>
+              <strong>ABOUT</strong>
+              <ListItem fontSize="13px">About Us</ListItem>
+              <ListItem fontSize="13px">Blog</ListItem>
+              <ListItem fontSize="13px">Trust & Safety</ListItem>
+              <ListItem fontSize="13px">Help & Support</ListItem>
+              <ListItem fontSize="13px">Press</ListItem>
+              <ListItem fontSize="13px">Contact</ListItem>
             </List>
           </Box>
+
           <Box>
             <List>
-              <Text>ENTREPRENEURS</Text>
-              <ListItem fontSize="16px">How It Works</ListItem>
-              <ListItem fontSize="16px">Indiegogo vs.</ListItem>
-              <ListItem fontSize="16px">Kickstarter</ListItem>
-              <ListItem fontSize="16px">Education Center</ListItem>
-              <ListItem fontSize="16px">Experts Directory</ListItem>
-              <ListItem fontSize="16px">Fees</ListItem>
-              <ListItem fontSize="16px">Enterprise</ListItem>
-              <ListItem fontSize="16px">China</ListItem>
+              <strong>ENTREPRENEURS</strong>
+              <ListItem fontSize="13px">How It Works</ListItem>
+              <ListItem fontSize="13px">FundFusion vs.</ListItem>
+              <ListItem fontSize="13px">Kickstarter</ListItem>
+              <ListItem fontSize="13px">Education Center</ListItem>
+              <ListItem fontSize="13px">Experts Directory</ListItem>
+              <ListItem fontSize="13px">Fees</ListItem>
+              <ListItem fontSize="13px">Enterprise</ListItem>
+              <ListItem fontSize="13px">China</ListItem>
             </List>
           </Box>
         </Stack>
@@ -62,10 +67,10 @@ function Footer() {
           </Box>
           <Box>
             <Text fontWeight={"bold"} fontSize="18px">
-              Find it first on Indiegogo
+              Find It First On FundFusion
             </Text>
-            <Text fontSize="16px">
-              Discover new and clever products in the Indiegogo newsletter
+            <Text fontSize="14px">
+              Discover new and clever campaign in the FundFusion newsletter
             </Text>
           </Box>
           <Box>
@@ -79,11 +84,7 @@ function Footer() {
           </Box>
           <Box>
             <Checkbox defaultChecked size="sm">
-              <Text fontSize="16px">
-                {" "}
-                I agree to the Terms of Use and have read and understand the
-                Privacy Policy
-              </Text>
+              <Text fontSize="16px"> I agree to the Terms & Conditions</Text>
             </Checkbox>
           </Box>
           <Box>
@@ -105,90 +106,6 @@ function Footer() {
           </Box>
         </Stack>
       </div>
-
-      <Container className="container2">
-        <Stack className="footeritems1">
-          <Box mb={5}>
-            <List>
-              <Text>EXPLORE</Text>
-              <ListItem fontSize="16px">What We Do</ListItem>
-              <ListItem fontSize="16px">Funding</ListItem>
-            </List>
-          </Box>
-          <Box>
-            <List>
-              <Text>ABOUT</Text>
-              <ListItem fontSize="16px">About Us</ListItem>
-              <ListItem fontSize="16px">Blog</ListItem>
-              <ListItem fontSize="16px">Trust & Safety</ListItem>
-              <ListItem fontSize="16px">Help & Support</ListItem>
-              <ListItem fontSize="16px">Press</ListItem>
-              <ListItem fontSize="16px">Contact</ListItem>
-            </List>
-          </Box>
-          <Box>
-            <List mt={5}>
-              <Text>ENTREPRENEURS</Text>
-              <ListItem fontSize="16px">How It Works</ListItem>
-              <ListItem fontSize="16px">Indiegogo vs.</ListItem>
-              <ListItem fontSize="16px">Kickstarter</ListItem>
-              <ListItem fontSize="16px">Education Center</ListItem>
-              <ListItem fontSize="16px">Experts Directory</ListItem>
-              <ListItem fontSize="16px">Fees</ListItem>
-              <ListItem fontSize="16px">Enterprise</ListItem>
-              <ListItem fontSize="16px">China</ListItem>
-            </List>
-          </Box>
-        </Stack>
-        <Stack className="footerlogo1">
-          <Box mb={"-5"}>
-            <Icon as={HiMailOpen} w={"70px"} h={"70px"} color="#e51075" />
-          </Box>
-          <Box>
-            <Text fontWeight={"bold"} fontSize="18px">
-              Find it first on Indiegogo
-            </Text>
-            <Text fontSize="16px">
-              Discover new and clever products in the Indiegogo newsletter
-            </Text>
-          </Box>
-          <Box>
-            <Input
-              mt={5}
-              borderRadius={0}
-              variant="filled"
-              borderColor={"#2a2a2a"}
-              placeholder="Your email address"
-            />
-          </Box>
-          <Box>
-            <Checkbox defaultChecked size="sm">
-              <Text fontSize="16px">
-                {" "}
-                I agree to the Terms of Use and have read and understand the
-                Privacy Policy
-              </Text>
-            </Checkbox>
-          </Box>
-          <Box>
-            {" "}
-            <button
-              style={{
-                backgroundColor: "#e51075",
-                fontSize: "12px",
-                color: "white",
-                padding: "10px 10px",
-                borderRadius: "2px",
-                border: "1px solid #e51075",
-                fontWeight: "bold",
-                width: "100%",
-              }}
-            >
-              SIGN UP NOW
-            </button>
-          </Box>
-        </Stack>
-      </Container>
 
       <Container
         display={"flex"}
@@ -214,17 +131,19 @@ function Footer() {
       <Container maxW={"100%"} mt={5}>
         <hr style={{ border: "1px solid grey" }} />
       </Container>
-      <Box maxw={"50%"} m={"auto"} mt={1} mb={5}>
-        <Stack direction={"row"} spacing={["5px", "8", "10", "20px"]}>
+
+      <Box maxw={"50%"} m={"auto"} mt={3} mb={3}>
+        <Stack
+          direction={"row"}
+          spacing={["5px", "8", "10", "20px"]}
+          justifyContent="center"
+        >
           <Text fontSize={["6px", "8px", "10px", "12px"]}>Terms of Use</Text>
           <Text fontSize={["6px", "8px", "10px", "12px"]}>Privacy Policy</Text>
-          <Text fontSize={["6px", "8px", "10px", "12px"]}>Cookie Policy</Text>
-          <Text fontSize={["6px", "8px", "10px", "12px"]}>
-            Do Not Sell My Personal Information
-          </Text>
+          <Text fontSize={["6px", "8px", "10px", "12px"]}>Cookies</Text>
           <Text fontSize={["6px", "8px", "10px", "12px"]}>Accessibility</Text>
           <Text fontSize={["6px", "8px", "10px", "12px"]}>
-            © 2022 Indiegogo, Inc. All Rights Reserved
+            ©2024 FundFusion
           </Text>
         </Stack>
       </Box>

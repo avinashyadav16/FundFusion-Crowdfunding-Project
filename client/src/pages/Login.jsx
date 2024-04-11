@@ -11,31 +11,37 @@ import {
   Stack,
   Heading,
 } from "@chakra-ui/react";
+
 import { Checkbox } from "@chakra-ui/react";
 import axios from "axios";
 import { useState } from "react";
 import { useContext } from "react";
 import { useNavigate } from "react-router-dom";
+
 import { AuthContext } from "../components/context";
+
 function Login() {
-  //const { isOpen, onOpen, onClose } = useDisclosure();
   const { state, dispatch } = useContext(AuthContext);
+
   const navigate = useNavigate();
+
   const onCloseLogin = () => {
     dispatch({ type: "closelogin" });
     console.log(state);
   };
+
   const initaldatalogin = {
     email: "",
     password: "",
   };
+
   const [datalogin, setdatalogin] = useState(initaldatalogin);
+
   const [data, setdata] = useState([]);
+
   const fetchuserdata = () => {
     axios("http://localhost:8080/signup").then((res) => setdata(res.data));
   };
-
-  //console.log(datalogin);
 
   const handleInput = (e) => {
     const name = e.target.name;
@@ -45,7 +51,6 @@ function Login() {
 
   const handlelogin = () => {
     fetchuserdata();
-    //console.log(data);
     data?.filter((ele) => {
       if (
         ele.email === datalogin.email &&
@@ -131,15 +136,11 @@ function Login() {
               <Checkbox colorScheme="pink" defaultChecked>
                 <Text fontSize="16px">
                   {" "}
-                  Sign me up for the Indiegogo newsletter
+                  Subscribe to FundFusion newsletter{" "}
                 </Text>
               </Checkbox>
               <Checkbox colorScheme="pink" defaultChecked>
-                <Text fontSize="16px">
-                  {" "}
-                  I agree to the Terms of Use and have read and understand the
-                  Privacy Policy
-                </Text>
+                <Text fontSize="16px"> Terms of Use and Privacy Policy </Text>
               </Checkbox>
             </Stack>
             <Stack>
@@ -172,7 +173,7 @@ function Login() {
                   marginBottom: "10px",
                 }}
               >
-                CONTINUE WITH FACEBOOK
+                CONTINUE WITH GOOGLE
               </button>
             </Stack>
             <Stack
@@ -182,7 +183,7 @@ function Login() {
               direction={"row"}
             >
               <Text fontSize="16px" textAlign={"center"}>
-                New To Indiegogo?
+                New To FundFusion?
               </Text>
               <Text
                 fontSize="14px"
@@ -190,7 +191,7 @@ function Login() {
                 textAlign={"center"}
                 textDecoration={"underline"}
               >
-                Sign Up
+                Sign Up Now
               </Text>
             </Stack>
           </ModalBody>

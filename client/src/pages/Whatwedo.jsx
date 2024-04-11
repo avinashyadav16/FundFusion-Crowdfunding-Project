@@ -9,7 +9,7 @@ import {
   Stack,
   Text,
 } from "@chakra-ui/react";
-import { AspectRatio } from "@chakra-ui/react";
+
 import { Icon } from "@chakra-ui/react";
 import { RiMotorbikeFill } from "react-icons/ri";
 import { GiInspiration } from "react-icons/gi";
@@ -27,20 +27,13 @@ function Whatwedo() {
           </Heading>
           <Text fontSize={["10px", "12px", "14px", "16px"]}>
             With both live crowdfunding campaigns and innovative products
-            shipping now, there’s no better place to start the hunt for cool and
-            clever innovations that surprise and delight. Indiegogo is where new
-            launches.
+            shipping now, there&apos;s no better place to start the hunt for
+            cool and clever innovations that surprise and delight. FundFusion is
+            where new launches.
           </Text>
         </Box>
       </Box>
       <Box width={["95%", "80%", "65%", "50%"]} margin={"auto"}>
-        <AspectRatio maxW="780px" maxH={"450px"} ratio={1}>
-          <iframe
-            title="indiegogo"
-            src="https://www.youtube.com/embed/2Tz_C14M6z0"
-            allowFullScreen
-          />
-        </AspectRatio>
         <Box mt={5}>
           <Heading
             mb={4}
@@ -50,12 +43,12 @@ function Whatwedo() {
             Fund the next big thing
           </Heading>
           <Text fontSize={["11px", "13px", "15px", "17px"]}>
-            Indiegogo&apos;s crowdfunding campaigns are where new and
+            FundFusion&apos;s crowdfunding campaigns are where new and
             groundbreaking products take flight, sometimes long before they hit
             mainstream availability. With thousands of campaigns launching every
             week, there&apos;s great tech, design, and much more around every
             corner — often with limited-time perks and pricing for the earliest
-            backers. Before it&apos;s everywhere, it&apos;s on Indiegogo.
+            backers. Before it&apos;s everywhere, it&apos;s on FundFusion.
           </Text>
         </Box>
       </Box>
@@ -83,11 +76,11 @@ function Whatwedo() {
           >
             <Image
               w={["98%", "88%", "78%", "68%"]}
-              src="https://c1.iggcdn.com/indiegogo-media-prod-cld/image/upload/v1/what_we_do/timeline_desktop_2x.png"
+              src="https://c1.iggcdn.com/FundFusion-media-prod-cld/image/upload/v1/what_we_do/timeline_desktop_2x.png"
             />
           </Box>
           <Text fontSize={["11px", "13px", "15px", "17px"]}>
-            With Indiegogo, you have the opportunity to support entrepreneurs
+            With FundFusion, you have the opportunity to support entrepreneurs
             and new technology from the earliest stages of development. Be sure
             to evaluate every campaign closely and contribute at a level you can
             afford in the event that the team is unable to complete the project
@@ -117,7 +110,7 @@ function Whatwedo() {
             Great finds, delivered daily
           </Heading>
           <Text fontSize="17px">
-            We surface the best and brightest of Indiegogo in our newsletter.
+            We surface the best and brightest of FundFusion in our newsletter.
             Sign up to find out about great technology, design, film, and much
             more — all before it hits the mainstream.
           </Text>
@@ -188,7 +181,7 @@ function Whatwedo() {
                 color={"#e51075"}
                 fontSize={"17px"}
               >
-                Does Indiegogo Guarantee perks?
+                Does FundFusion Guarantee perks?
               </Text>
               <Text
                 _hover={{ textDecoration: "underline" }}
@@ -228,14 +221,14 @@ function Whatwedo() {
             >
               <Image
                 mb={5}
-                src="https://indiegogo-media-prod-cld-res.cloudinary.com/image/upload/c_scale,h_135/what_we_do/misfit.png"
+                src="https://FundFusion-media-prod-cld-res.cloudinary.com/image/upload/c_scale,h_135/what_we_do/misfit.png"
               />
               <Text fontWeight={"bold"}>Misfit Shine</Text>
               <Text>7,957 Backers</Text>
               <Text fontSize="15px">
                 With super-smart fitness technology squeezed into a sleek,
                 take-it-anywhere design, the Misfit Shine was a huge hit. Today
-                it’s available in stores everywhere, but Indiegogo backers were
+                it’s available in stores everywhere, but FundFusion backers were
                 in on the action first.
               </Text>
             </Box>
@@ -247,7 +240,7 @@ function Whatwedo() {
             >
               <Image
                 mb={5}
-                src="https://indiegogo-media-prod-cld-res.cloudinary.com/image/upload/c_scale,h_135/what_we_do/bluesmart.png"
+                src="https://FundFusion-media-prod-cld-res.cloudinary.com/image/upload/c_scale,h_135/what_we_do/bluesmart.png"
               />
               <Text fontWeight={"bold"}>Bluesmart</Text>
               <Text>10,984 Backers</Text>
@@ -255,7 +248,7 @@ function Whatwedo() {
                 This smash-hit campaign almost singlehandedly invented the smart
                 suitcase as the must-have travel accessory that it is today.
                 With innovative features like location tracking and a built-in
-                scale, Bluesmart went big on Indiegogo before landing in stores
+                scale, Bluesmart went big on FundFusion before landing in stores
                 around the world.
               </Text>
             </Box>
@@ -267,14 +260,14 @@ function Whatwedo() {
             >
               <Image
                 mb={5}
-                src="https://indiegogo-media-prod-cld-res.cloudinary.com/image/upload/c_scale,h_135/what_we_do/evapolar.png"
+                src="https://FundFusion-media-prod-cld-res.cloudinary.com/image/upload/c_scale,h_135/what_we_do/evapolar.png"
               />
               <Text fontWeight={"bold"}>Evapolar</Text>
               <Text>6,616 Backers</Text>
               <Text fontSize="15px">
                 With super-smart fitness technology squeezed into a sleek,
                 take-it-anywhere design, the Misfit Shine was a huge hit. Today
-                it’s available in stores everywhere, but Indiegogo backers were
+                it’s available in stores everywhere, but FundFusion backers were
                 in on the action first.
               </Text>
             </Box>{" "}
@@ -286,13 +279,13 @@ function Whatwedo() {
             >
               <Image
                 mb={5}
-                src="https://indiegogo-media-prod-cld-res.cloudinary.com/image/upload/c_scale,h_135/what_we_do/super_troopers.png"
+                src="https://FundFusion-media-prod-cld-res.cloudinary.com/image/upload/c_scale,h_135/what_we_do/super_troopers.png"
               />
               <Text fontWeight={"bold"}>Super Troopers 2</Text>
               <Text>54,531 Backers</Text>
               <Text fontSize="15px">
                 With its truly gigantic backer community, Super Troopers 2
-                became one of the most iconic Indiegogo film projects. The team
+                became one of the most iconic FundFusion film projects. The team
                 behind the project offered backers everything from movie tickets
                 to an actual police car from the film!
               </Text>
@@ -310,7 +303,7 @@ function Whatwedo() {
               boxSize="440px"
               objectFit="cover"
               transform="rotate(60deg)"
-              src="https://c1.iggcdn.com/indiegogo-media-prod-cld/image/upload/c_scale,h_740/v1/what_we_do/funding_hero_desktop_foreground.png"
+              src="https://c1.iggcdn.com/FundFusion-media-prod-cld/image/upload/c_scale,h_740/v1/what_we_do/funding_hero_desktop_foreground.png"
             />
           </Box>
         </Stack>

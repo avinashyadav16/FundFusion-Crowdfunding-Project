@@ -7,38 +7,29 @@ import {
   Button,
   InputGroup,
   InputRightElement,
-  Text,
+  // Text,
 } from "@chakra-ui/react";
-import {
-  Drawer,
-  DrawerBody,
-  DrawerFooter,
-  DrawerHeader,
-  DrawerOverlay,
-  DrawerContent,
-  DrawerCloseButton,
-} from "@chakra-ui/react";
-import { Search2Icon, CloseIcon, HamburgerIcon } from "@chakra-ui/icons";
-import "./Navbar.css";
-import { useRef, useState } from "react";
+
+import { useContext } from "react";
+import { useState } from "react";
+import { Search2Icon, CloseIcon } from "@chakra-ui/icons";
+
 import SignUp from "./SignUp";
 import Login from "./Login";
-import { useContext } from "react";
 import { AuthContext } from "../components/context";
+
+import "./Navbar.css";
 
 function Navbar() {
   const navigate = useNavigate();
+
   const [ok, setok] = useState(true);
+
   const handlesearch = () => {
     setok(!ok);
   };
-  // const { isOpen, onOpen, onClose } = useDisclosure();
-  const btnRef = useRef();
-  const { state, dispatch } = useContext(AuthContext);
 
-  const onClose = () => {
-    dispatch({ type: "closemobilenav" });
-  };
+  const { state, dispatch } = useContext(AuthContext);
 
   const handlelogout = () => {
     console.log("logged out");
@@ -48,110 +39,6 @@ function Navbar() {
   };
   return (
     <>
-      <Box className="mobilenav">
-        <Stack
-          display={"flex"}
-          alignItems="center"
-          justifyContent="space-around"
-          flexDirection="row"
-        >
-          <Box>
-            <svg width="230px" height="50px">
-              <Link to="/">
-                <text
-                  fontSize="30"
-                  fontWeight={900}
-                  fontFamily="benton-sans,Helvetica,Sans-serif"
-                  x="0"
-                  y="35"
-                  fill="#e51075"
-                >
-                  INDIEGOGO
-                </text>
-              </Link>
-            </svg>
-          </Box>
-          <Button
-            background={"transparent"}
-            color="black"
-            ref={btnRef}
-            colorScheme="teal"
-            onClick={() => dispatch({ type: "openmobilenav" })}
-            width="max-content"
-            height="max-content"
-          >
-            <HamburgerIcon />
-          </Button>
-        </Stack>
-        <Drawer
-          isOpen={state.isOpenNowmobnav}
-          placement="right"
-          onClose={onClose}
-          finalFocusRef={btnRef}
-        >
-          <DrawerOverlay />
-          <DrawerContent
-            color="#2a2a2a"
-            display={"flex"}
-            alignItems="center"
-            justifyContent={"center"}
-            textAlign="center"
-          >
-            <DrawerCloseButton />
-            <DrawerHeader>MENU</DrawerHeader>
-
-            <DrawerBody>
-              <Link to="/">
-                <Text onClick={() => dispatch({ type: "closemobilenav" })}>
-                  Home
-                </Text>
-              </Link>
-              <hr style={{ marginBottom: "10px" }} />
-              <Link to="/top-10">
-                <Text onClick={() => dispatch({ type: "closemobilenav" })}>
-                  Explore
-                </Text>
-              </Link>
-              <hr style={{ marginBottom: "10px" }} />
-              <Link to="/whatwedo">
-                <Text onClick={() => dispatch({ type: "closemobilenav" })}>
-                  What We Do
-                </Text>
-              </Link>
-              <hr style={{ marginBottom: "10px" }} />
-              <Link to="/top-10">
-                <Text onClick={() => dispatch({ type: "closemobilenav" })}>
-                  For Entrepreneurs
-                </Text>
-              </Link>
-              <hr style={{ marginBottom: "10px" }} />
-              <Link to="/campaign">
-                <Text onClick={() => dispatch({ type: "closemobilenav" })}>
-                  Start a Campaign
-                </Text>
-              </Link>
-              <hr style={{ marginBottom: "10px" }} />
-              {!state.isAuth ? (
-                <Box>
-                  <Login />
-                  <hr style={{ marginBottom: "10px" }} />
-                  <SignUp />
-                </Box>
-              ) : (
-                <Button onClick={handlelogout}>Logout</Button>
-              )}
-              <hr style={{ marginBottom: "10px" }} />
-            </DrawerBody>
-
-            <DrawerFooter>
-              <Button variant="outline" mr={3} onClick={onClose}>
-                Cancel
-              </Button>
-            </DrawerFooter>
-          </DrawerContent>
-        </Drawer>
-      </Box>
-
       <div className="desnav">
         {ok ? (
           <Box className="containernav">
@@ -167,25 +54,22 @@ function Navbar() {
                       y="35"
                       fill="#e51075"
                     >
-                      INDIEGOGO
+                      FundFusion
                     </text>
                   </Link>
                 </svg>
               </Box>
               <Box>
                 <Stack spacing="24px" width={600} direction={"row"}>
+                  <button onClick={handlesearch}>
+                    <Search2Icon mb="1"></Search2Icon>
+                  </button>
                   <Link to="/top-10">
                     <p>Explore</p>
                   </Link>
                   <Link to="/top-10">
-                    <p>Our Top 10 Finds</p>
+                    <p>Top 10 Finds</p>
                   </Link>
-                  <Link to="/whatwedo">
-                    <p>Team Favorite</p>
-                  </Link>
-                  <button onClick={handlesearch}>
-                    <Search2Icon mb="1"></Search2Icon>
-                  </button>
                 </Stack>
               </Box>
             </Container>
@@ -193,7 +77,7 @@ function Navbar() {
               <Box>
                 <Stack spacing={"24px"} direction={"row"}>
                   <Link to="/campaign">
-                    <p>Start a Campaign</p>
+                    <p>New Campaign</p>
                   </Link>
                   <Link to="/whatwedo">
                     <p>What We Do</p>

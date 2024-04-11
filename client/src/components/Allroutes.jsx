@@ -1,8 +1,9 @@
 import { Routes, Route } from "react-router-dom";
-import Campaign from "../pages/Campaign";
 import Home from "../pages/Home";
-import Top10 from "../pages/Top10";
 import Whatwedo from "../pages/Whatwedo";
+import Campaign from "../pages/Campaign";
+import Top10 from "../pages/Top10";
+
 function AllRoute() {
   return (
     <Routes>
@@ -10,7 +11,6 @@ function AllRoute() {
       <Route path="/whatwedo" element={<Whatwedo />}></Route>
       <Route path="/campaign" element={<Campaign />}></Route>
       <Route path="/top-10" element={<Top10 />}></Route>
-      {/* <Route path="/campaign" element={<Campaign />}></Route> */}
     </Routes>
   );
 }

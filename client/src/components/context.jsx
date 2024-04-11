@@ -6,7 +6,6 @@ export const AuthContext = createContext();
 const initialvalue = {
   isOpenNow: false,
   isOpenNowLogin: false,
-  isOpenNowmobnav: false,
   isAuth: false,
 };
 
@@ -34,18 +33,6 @@ function reducer(state, action) {
       return {
         ...state,
         isOpenNowLogin: false,
-      };
-    }
-    case "openmobilenav": {
-      return {
-        ...state,
-        isOpenNowmobnav: true,
-      };
-    }
-    case "closemobilenav": {
-      return {
-        ...state,
-        isOpenNowmobnav: false,
       };
     }
     case "loginsucceed": {
