@@ -67,13 +67,31 @@ function Login() {
 
   return (
     <>
-      <p
+      {/* <p
         style={{ cursor: "pointer" }}
         onClick={() =>
           dispatch({
             type: "openlogin",
           })
         }
+      >
+        Login
+      </p> */}
+      <p
+        style={{
+          cursor: "pointer",
+          backgroundColor: "#bdbdbd",
+          padding: "9px 20px",
+          borderRadius: "7px",
+          transition: "background-color 0.3s ease",
+        }}
+        onClick={() =>
+          dispatch({
+            type: "openlogin",
+          })
+        }
+        onMouseEnter={(e) => (e.target.style.backgroundColor = "transparent")}
+        onMouseLeave={(e) => (e.target.style.backgroundColor = "#bdbdbd")}
       >
         Login
       </p>

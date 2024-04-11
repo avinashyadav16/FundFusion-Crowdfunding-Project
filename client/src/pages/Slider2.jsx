@@ -6,35 +6,35 @@ function Slider2() {
   const data1 = [
     {
       img1: "https://c2.iggcdn.com/indiegogo-media-prod-cld/image/upload/c_fit,w_auto,g_center,q_auto:best,dpr_1.3,f_auto/zda3vycwoollgmtpgzo3",
-      title1: "G7 HAUL PACK",
-      des1: "The G7 CARRY COLLECTION: featuring the HAUL PACK, WATERPROOF WALL SACKS, and GEAR CONES",
-      info1: "Travel & Outdoors",
+      title1: "Pathological Lab Funding",
+      des1: "Fund the establishment of a state-of-the-art pathological laboratory equipped with cutting-edge technology.",
+      info1: "Health & Medical",
       price: `$28,994`,
       raised: `${(Math.random() * 100).toFixed(2)}` + "%",
       days: `${(Math.random() * 50).toFixed(0)}`,
     },
     {
-      img1: "https://c2.iggcdn.com/indiegogo-media-prod-cld/image/upload/c_fit,w_auto,g_center,q_auto:best,dpr_1.3,f_auto/i4c0j3coodlmaau6qnmv",
-      title1: "The Ghosts of Matecumbe Key",
-      des1: "The G7 CARRY COLLECTION: featuring the HAUL PACK, WATERPROOF WALL SACKS, and GEAR CONES",
-      info1: "Travel & Outdoors",
+      img1: "https://c3.iggcdn.com/indiegogo-media-prod-cld/image/upload/c_fit,w_auto,g_center,q_auto:best,dpr_1.3,f_auto/k4x7oj7ffwmkd0e6kjvw",
+      title1: "The Fintech Startup",
+      des1: "Revolutionize our innovative fintech startup, offering seamless transactions, secure banking, and financial management.",
+      info1: "Finance & Technology",
       price: `$28,994`,
       raised: `${(Math.random() * 100).toFixed(2)}` + "%",
       days: `${(Math.random() * 50).toFixed(0)}`,
     },
     {
       img1: "https://c0.iggcdn.com/indiegogo-media-prod-cld/image/upload/c_fit,w_auto,g_center,q_auto:best,dpr_1.3,f_auto/upyge4svxsgyakz7gthj",
-      title1: "CRIMSON RHEN Vol. 1 GN from Clownfish Studios",
-      des1: "The G7 CARRY COLLECTION: featuring the HAUL PACK, WATERPROOF WALL SACKS, and GEAR CONES",
-      info1: "Travel & Outdoors",
+      title1: "The Anime Studios",
+      des1: "Embark on an adventure through our captivating anime universe, where imagination knows no bounds.",
+      info1: "Entertainment & Animation",
       price: `$28,994`,
       raised: `${(Math.random() * 100).toFixed(2)}` + "%",
       days: `${(Math.random() * 50).toFixed(0)}`,
     },
     {
       img1: "https://c2.iggcdn.com/indiegogo-media-prod-cld/image/upload/c_fit,w_auto,g_center,q_auto:best,dpr_1.3,f_auto/flwsvqbo75vq2e3uzjtf",
-      title1: "Taskin FLYT Expandable Travel Backpack",
-      des1: "The G7 CARRY COLLECTION: featuring the HAUL PACK, WATERPROOF WALL SACKS, and GEAR CONES",
+      title1: "Expandable Travel Backpack",
+      des1: "The Expandable Travel Backpack is designed for adventurers seeking versatility and convenience.",
       info1: "Travel & Outdoors",
       price: `$28,994`,
       raised: `${(Math.random() * 100).toFixed(2)}` + "%",
@@ -50,7 +50,7 @@ function Slider2() {
       days: `${(Math.random() * 50).toFixed(0)}`,
     },
     {
-      img1: "https://c3.iggcdn.com/indiegogo-media-prod-cld/image/upload/c_fit,w_auto,g_center,q_auto:best,dpr_1.3,f_auto/k4x7oj7ffwmkd0e6kjvw",
+      img1: "https://c2.iggcdn.com/indiegogo-media-prod-cld/image/upload/c_fit,w_auto,g_center,q_auto:best,dpr_1.3,f_auto/i4c0j3coodlmaau6qnmv",
       title1: "The Get Right Band's Concept Album!",
       des1: "We're making a concept album and we would love and appreciate your help bringing it to life!",
       info1: "Travel & Outdoors",
@@ -143,14 +143,14 @@ function Slider2() {
         <button
           className="prenex1"
           disabled={count === 0}
-          style={{ backgroundColor: "red" }}
+          style={{ backgroundColor: "green" }}
           onClick={handlepre}
         >
           <img src="https://img.icons8.com/metro/72/less-than.png" alt="" />
         </button>
         <button
           className="prenex2"
-          style={{ backgroundColor: "red" }}
+          style={{ backgroundColor: "green" }}
           onClick={handlenext}
         >
           <img src="https://img.icons8.com/metro/72/more-than.png" alt="" />

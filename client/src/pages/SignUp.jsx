@@ -60,12 +60,20 @@ function SignUp() {
   return (
     <>
       <p
-        style={{ cursor: "pointer" }}
+        style={{
+          cursor: "pointer",
+          backgroundColor: "#bdbdbd",
+          padding: "9px 20px",
+          borderRadius: "7px",
+          transition: "background-color 0.3s ease",
+        }}
         onClick={() =>
           dispatch({
             type: "opensingup",
           })
         }
+        onMouseEnter={(e) => (e.target.style.backgroundColor = "transparent")}
+        onMouseLeave={(e) => (e.target.style.backgroundColor = "#bdbdbd")}
       >
         Sign Up
       </p>

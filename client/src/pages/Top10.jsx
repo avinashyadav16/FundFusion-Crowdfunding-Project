@@ -15,14 +15,11 @@ import {
   AiOutlineFacebook,
   AiOutlineTwitter,
 } from "react-icons/ai";
-import Footer from "./Footer";
-import Navbar from "./Navbar";
 import "./Top10.css";
 
 function Top10() {
   return (
     <>
-      <Navbar />
       <hr
         style={{
           height: "4px",
@@ -688,7 +685,6 @@ function Top10() {
           </SimpleGrid>
         </Container>
       </Container>
-      <Footer />
     </>
   );
 }

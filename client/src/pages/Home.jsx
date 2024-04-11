@@ -17,10 +17,8 @@ import { BsFillSpeakerFill } from "react-icons/bs";
 import { GiFilmProjector } from "react-icons/gi";
 import { ChevronRightIcon } from "@chakra-ui/icons";
 
-import Navbar from "./Navbar";
 import Slider1 from "./Slider1";
 import Slider2 from "./Slider2";
-import Footer from "./Footer";
 import "./home.css";
 
 function Home() {
@@ -33,7 +31,6 @@ function Home() {
         justifyContent={"center"}
         maxW={"100%"}
       >
-        <Navbar />
         <Slider1 />
         <Container maxW={"100%"} mt={4} mb={5}>
           <Heading size="lg" fontWeight={400}>
@@ -413,8 +410,6 @@ function Home() {
             </Box>
           </Box>
         </Stack>
-
-        <Footer />
       </Container>
     </>
   );

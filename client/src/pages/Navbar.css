@@ -3,6 +3,7 @@
   align-items: center;
   max-width: 100%;
 }
+
 .maincontainer {
   display: flex;
   align-items: center;
@@ -13,6 +14,7 @@
   color: rgb(42, 42, 42);
   width: 50%;
 }
+
 .maincontainer1 {
   display: flex;
   align-items: center;
@@ -23,30 +25,39 @@
   font-weight: 600;
   color: rgb(42, 42, 42);
 }
+
 .logo {
   margin-left: -100px;
 }
+
 .containernav p:hover {
   color: #e51075;
 }
+
 .desnav {
-  width:100%
+  width: 100%;
+  margin-top: 5px;
 }
+
 .mobilenav {
   width: 100%;
 }
+
 @media all and (min-width: 780px) and (max-width: 3000px) {
   .mobilenav {
     display: none;
   }
+
   .desnav {
     display: block;
   }
 }
+
 @media all and (min-width: 250px) and (max-width: 780px) {
   .mobilenav {
     display: block;
   }
+
   .desnav {
     display: none;
   }

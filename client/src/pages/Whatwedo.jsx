@@ -14,12 +14,10 @@ import { Icon } from "@chakra-ui/react";
 import { RiMotorbikeFill } from "react-icons/ri";
 import { GiInspiration } from "react-icons/gi";
 import "./whatwedo.css";
-import Footer from "./Footer";
-import Navbar from "./Navbar";
+
 function Whatwedo() {
   return (
     <div className="main">
-      <Navbar />
       <Box className="containerbox">
         <Box mr={"20%"} w={"60%"}>
           <Heading fontSize={["sm", "md", "xl", "3xl"]} mb={2}>
@@ -382,7 +380,6 @@ function Whatwedo() {
           </button>
         </Stack>
       </Box>
-      <Footer />
     </div>
   );
 }
