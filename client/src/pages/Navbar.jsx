@@ -50,7 +50,7 @@ function Navbar() {
                       fontSize="30"
                       fontWeight={900}
                       fontFamily="benton-sans,Helvetica,Sans-serif"
-                      x="0"
+                      x="40"
                       y="35"
                       fill="#e51075"
                     >
@@ -60,22 +60,25 @@ function Navbar() {
                 </svg>
               </Box>
               <Box>
-                <Stack spacing="24px" width={600} direction={"row"}>
-                  <button onClick={handlesearch}>
-                    <Search2Icon mb="1"></Search2Icon>
-                  </button>
+                <Stack spacing="44px" width={300} direction={"row"}>
+                  <Link to="/">
+                    <p>Home</p>
+                  </Link>
+                  {/* <Link to="/FundPage">
+                    <p>Fund Now</p>
+                  </Link> */}
                   <Link to="/top-10">
                     <p>Explore</p>
-                  </Link>
-                  <Link to="/top-10">
-                    <p>Top 10 Finds</p>
                   </Link>
                 </Stack>
               </Box>
             </Container>
+            <button onClick={handlesearch}>
+              <Search2Icon mb="1"></Search2Icon>
+            </button>
             <Container className="maincontainer1">
               <Box>
-                <Stack spacing={"24px"} direction={"row"}>
+                <Stack spacing="24px" direction={"row"}>
                   <Link to="/campaign">
                     <p>New Campaign</p>
                   </Link>
@@ -102,7 +105,7 @@ function Navbar() {
             pb={1}
             pt={1}
             margin="auto"
-            width={"96%"}
+            width={"50%"}
           >
             <InputGroup size="md">
               <Search2Icon mt={2} mr={2}></Search2Icon>

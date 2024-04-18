@@ -8,6 +8,11 @@ import {
   Image,
 } from "@chakra-ui/react";
 
+import { Tag, TagLabel, TagRightIcon, HStack } from "@chakra-ui/react";
+import { MdSettings } from "react-icons/md";
+
+import { Link } from "react-router-dom";
+
 import { Icon } from "@chakra-ui/react";
 import { IoIosHome } from "react-icons/io";
 import { ImMobile2 } from "react-icons/im";
@@ -42,17 +47,26 @@ function Home() {
           </Text>
           <Box
             display={"flex"}
-            justifyContent={"space-between"}
+            justifyContent={"center"}
             width={["80%", "40%", "30%", "16.5%"]}
             margin={"auto"}
             mt={2}
           >
-            <button className="primary1">SIGN UP NOW</button>
-            <button className="secondary1">LEARN MORE</button>
+            <Link to="/whatwedo">
+              <button className="secondary1">LEARN MORE</button>
+            </Link>
           </Box>
         </Container>
 
         <Slider2 />
+
+        <HStack className="mt-12">
+          <Tag size={"lg"} variant="outline" colorScheme="blue">
+            <TagRightIcon as={MdSettings} />
+            <TagLabel className="pl-2"> Popular Projects</TagLabel>
+            <TagRightIcon as={MdSettings} />
+          </Tag>
+        </HStack>
 
         <SimpleGrid
           margin={"auto"}

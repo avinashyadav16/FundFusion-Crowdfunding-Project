@@ -7,7 +7,12 @@ import {
   Stack,
   Text,
   Image,
+  Button,
+  Wrap,
+  WrapItem,
 } from "@chakra-ui/react";
+
+import { Link } from "react-router-dom";
 
 import { Icon } from "@chakra-ui/react";
 import {
@@ -63,6 +68,7 @@ function Top10() {
           <SimpleGrid columns={[1, 1, 2]} spacing="40px">
             <Box
               border={"px solid #dddddd"}
+              borderRadius={"lg"}
               transitionProperty={"all"}
               transitionDuration={"250ms"}
               transitionTimingFunction={
@@ -78,17 +84,27 @@ function Top10() {
                 cursor: "pointer",
               }}
             >
-              <Image src="https://c1.iggcdn.com/indiegogo-media-prod-cld/image/upload/c_fill,f_auto,h_310,w_590/bnsdr6qwy5iymzroqwz7.jpg" />
+              <Image
+                src="https://c1.iggcdn.com/indiegogo-media-prod-cld/image/upload/c_fill,f_auto,h_310,w_590/bnsdr6qwy5iymzroqwz7.jpg"
+                borderRadius={"lg"}
+              />
               <Box m={"auto"} maxWidth={"95%"}>
-                <Text
-                  pt={6}
-                  fontWeight={550}
-                  color="rgb(8,131,102)"
-                  filter="auto"
-                  brightness="110%"
-                >
-                  FUNDING
-                </Text>
+                <div className="mt-1 mb-1 flex justify-between items-center">
+                  <Stack direction="row" spacing={4} align="center">
+                    <Button colorScheme="teal" variant="ghost">
+                      FUNDING
+                    </Button>
+                  </Stack>
+                  <Stack direction="column">
+                    <Wrap spacing={4}>
+                      <WrapItem>
+                        <Link to="/FundPage">
+                          <Button colorScheme="green">Fund Now</Button>
+                        </Link>
+                      </WrapItem>
+                    </Wrap>
+                  </Stack>
+                </div>
                 <hr />
                 <Heading mb={1} mt={4} fontSize={"25px"}>
                   Speede - Advanced Home Gym for Faster Results
@@ -123,8 +139,10 @@ function Top10() {
                 />
               </Box>
             </Box>
+
             <Box
               border={"1px solid #dddddd"}
+              borderRadius={"lg"}
               transitionProperty={"all"}
               transitionDuration={"250ms"}
               transitionTimingFunction={
@@ -140,17 +158,27 @@ function Top10() {
                 cursor: "pointer",
               }}
             >
-              <Image src="https://c1.iggcdn.com/indiegogo-media-prod-cld/image/upload/c_fill,f_auto,h_310,w_590/vs8ayvtkepnwh9ks1a71.jpg" />
+              <Image
+                src="https://c1.iggcdn.com/indiegogo-media-prod-cld/image/upload/c_fill,f_auto,h_310,w_590/vs8ayvtkepnwh9ks1a71.jpg"
+                borderRadius={"lg"}
+              />
               <Box m={"auto"} maxWidth={"95%"}>
-                <Text
-                  pt={6}
-                  fontWeight={550}
-                  color="rgb(8,131,102)"
-                  filter="auto"
-                  brightness="110%"
-                >
-                  FUNDING
-                </Text>
+                <div className="mt-1 mb-1 flex justify-between items-center">
+                  <Stack direction="row" spacing={4} align="center">
+                    <Button colorScheme="teal" variant="ghost">
+                      FUNDING
+                    </Button>
+                  </Stack>
+                  <Stack direction="column">
+                    <Wrap spacing={4}>
+                      <WrapItem>
+                        <Link to="/FundPage">
+                          <Button colorScheme="green">Fund Now</Button>
+                        </Link>
+                      </WrapItem>
+                    </Wrap>
+                  </Stack>
+                </div>
                 <hr />
                 <Heading mb={1} mt={4} fontSize={"25px"}>
                   GPD WIN Max 2 Handheld Gaming PC 4G LTE AMD 6800U
@@ -187,6 +215,7 @@ function Top10() {
             </Box>
             <Box
               border={"px solid #dddddd"}
+              borderRadius={"lg"}
               transitionProperty={"all"}
               transitionDuration={"250ms"}
               transitionTimingFunction={
@@ -202,17 +231,27 @@ function Top10() {
                 cursor: "pointer",
               }}
             >
-              <Image src="https://c1.iggcdn.com/indiegogo-media-prod-cld/image/upload/c_fill,f_auto,h_310,w_590/mkvsitirjoi2skrenaym.jpg" />
+              <Image
+                src="https://c1.iggcdn.com/indiegogo-media-prod-cld/image/upload/c_fill,f_auto,h_310,w_590/mkvsitirjoi2skrenaym.jpg"
+                borderRadius={"lg"}
+              />
               <Box m={"auto"} maxWidth={"95%"}>
-                <Text
-                  pt={6}
-                  fontWeight={550}
-                  color="rgb(8,131,102)"
-                  filter="auto"
-                  brightness="110%"
-                >
-                  FUNDING
-                </Text>
+                <div className="mt-1 mb-1 flex justify-between items-center">
+                  <Stack direction="row" spacing={4} align="center">
+                    <Button colorScheme="teal" variant="ghost">
+                      FUNDING
+                    </Button>
+                  </Stack>
+                  <Stack direction="column">
+                    <Wrap spacing={4}>
+                      <WrapItem>
+                        <Link to="/FundPage">
+                          <Button colorScheme="green">Fund Now</Button>
+                        </Link>
+                      </WrapItem>
+                    </Wrap>
+                  </Stack>
+                </div>
                 <hr />
                 <Heading mb={1} mt={4} fontSize={"25px"}>
                   XFoil: Electric Carbon Fiber Surf & Hydrofoil
@@ -249,6 +288,7 @@ function Top10() {
             </Box>
             <Box
               border={"px solid #dddddd"}
+              borderRadius={"lg"}
               transitionProperty={"all"}
               transitionDuration={"250ms"}
               transitionTimingFunction={
@@ -264,17 +304,27 @@ function Top10() {
                 cursor: "pointer",
               }}
             >
-              <Image src="https://c1.iggcdn.com/indiegogo-media-prod-cld/image/upload/c_fill,f_auto,h_310,w_590/rx5nnvdq4cffhdop6pzd.jpg" />
+              <Image
+                src="https://c1.iggcdn.com/indiegogo-media-prod-cld/image/upload/c_fill,f_auto,h_310,w_590/rx5nnvdq4cffhdop6pzd.jpg"
+                borderRadius={"lg"}
+              />
               <Box m={"auto"} maxWidth={"95%"}>
-                <Text
-                  pt={6}
-                  fontWeight={550}
-                  color="rgb(8,131,102)"
-                  filter="auto"
-                  brightness="110%"
-                >
-                  FUNDING
-                </Text>
+                <div className="mt-1 mb-1 flex justify-between items-center">
+                  <Stack direction="row" spacing={4} align="center">
+                    <Button colorScheme="teal" variant="ghost">
+                      FUNDING
+                    </Button>
+                  </Stack>
+                  <Stack direction="column">
+                    <Wrap spacing={4}>
+                      <WrapItem>
+                        <Link to="/FundPage">
+                          <Button colorScheme="green">Fund Now</Button>
+                        </Link>
+                      </WrapItem>
+                    </Wrap>
+                  </Stack>
+                </div>
                 <hr />
                 <Heading mb={1} mt={4} fontSize={"25px"}>
                   ROIDMI EVA: World&apos;s First
@@ -311,6 +361,7 @@ function Top10() {
             </Box>
             <Box
               border={"px solid #dddddd"}
+              borderRadius={"lg"}
               transitionProperty={"all"}
               transitionDuration={"250ms"}
               transitionTimingFunction={
@@ -326,17 +377,27 @@ function Top10() {
                 cursor: "pointer",
               }}
             >
-              <Image src="https://c1.iggcdn.com/indiegogo-media-prod-cld/image/upload/c_fill,f_auto,h_310,w_590/o5kl44dk3ns9qvavth2b.jpg" />
+              <Image
+                src="https://c1.iggcdn.com/indiegogo-media-prod-cld/image/upload/c_fill,f_auto,h_310,w_590/o5kl44dk3ns9qvavth2b.jpg"
+                borderRadius={"lg"}
+              />
               <Box m={"auto"} maxWidth={"95%"}>
-                <Text
-                  pt={6}
-                  fontWeight={550}
-                  color="rgb(8,131,102)"
-                  filter="auto"
-                  brightness="110%"
-                >
-                  FUNDING
-                </Text>
+                <div className="mt-1 mb-1 flex justify-between items-center">
+                  <Stack direction="row" spacing={4} align="center">
+                    <Button colorScheme="teal" variant="ghost">
+                      FUNDING
+                    </Button>
+                  </Stack>
+                  <Stack direction="column">
+                    <Wrap spacing={4}>
+                      <WrapItem>
+                        <Link to="/FundPage">
+                          <Button colorScheme="green">Fund Now</Button>
+                        </Link>
+                      </WrapItem>
+                    </Wrap>
+                  </Stack>
+                </div>
                 <hr />
                 <Heading mb={1} mt={4} fontSize={"25px"}>
                   BP Doctor MED: Know Your Blood Pressure & Health Status
@@ -374,6 +435,7 @@ function Top10() {
             </Box>
             <Box
               border={"px solid #dddddd"}
+              borderRadius={"lg"}
               transitionProperty={"all"}
               transitionDuration={"250ms"}
               transitionTimingFunction={
@@ -389,17 +451,27 @@ function Top10() {
                 cursor: "pointer",
               }}
             >
-              <Image src="https://c1.iggcdn.com/indiegogo-media-prod-cld/image/upload/c_fill,f_auto,h_310,w_590/tsb4edj1sdwewhewh6pf.jpg" />
+              <Image
+                src="https://c1.iggcdn.com/indiegogo-media-prod-cld/image/upload/c_fill,f_auto,h_310,w_590/tsb4edj1sdwewhewh6pf.jpg"
+                borderRadius={"lg"}
+              />
               <Box m={"auto"} maxWidth={"95%"}>
-                <Text
-                  pt={6}
-                  fontWeight={550}
-                  color="rgb(8,131,102)"
-                  filter="auto"
-                  brightness="110%"
-                >
-                  FUNDING
-                </Text>
+                <div className="mt-1 mb-1 flex justify-between items-center">
+                  <Stack direction="row" spacing={4} align="center">
+                    <Button colorScheme="teal" variant="ghost">
+                      FUNDING
+                    </Button>
+                  </Stack>
+                  <Stack direction="column">
+                    <Wrap spacing={4}>
+                      <WrapItem>
+                        <Link to="/FundPage">
+                          <Button colorScheme="green">Fund Now</Button>
+                        </Link>
+                      </WrapItem>
+                    </Wrap>
+                  </Stack>
+                </div>
                 <hr />
                 <Heading mb={1} mt={4} fontSize={"25px"}>
                   C3STROM ASTRO: Class 3 Cyber Electric Bike
@@ -436,6 +508,7 @@ function Top10() {
             </Box>
             <Box
               border={"px solid #dddddd"}
+              borderRadius={"lg"}
               transitionProperty={"all"}
               transitionDuration={"250ms"}
               transitionTimingFunction={
@@ -451,17 +524,27 @@ function Top10() {
                 cursor: "pointer",
               }}
             >
-              <Image src="https://c1.iggcdn.com/indiegogo-media-prod-cld/image/upload/c_fill,f_auto,h_310,w_590/hovjleo4pojmdutdh9zq.jpg" />
+              <Image
+                src="https://c1.iggcdn.com/indiegogo-media-prod-cld/image/upload/c_fill,f_auto,h_310,w_590/hovjleo4pojmdutdh9zq.jpg"
+                borderRadius={"lg"}
+              />
               <Box m={"auto"} maxWidth={"95%"}>
-                <Text
-                  pt={6}
-                  fontWeight={550}
-                  color="rgb(8,131,102)"
-                  filter="auto"
-                  brightness="110%"
-                >
-                  FUNDING
-                </Text>
+                <div className="mt-1 mb-1 flex justify-between items-center">
+                  <Stack direction="row" spacing={4} align="center">
+                    <Button colorScheme="teal" variant="ghost">
+                      FUNDING
+                    </Button>
+                  </Stack>
+                  <Stack direction="column">
+                    <Wrap spacing={4}>
+                      <WrapItem>
+                        <Link to="/FundPage">
+                          <Button colorScheme="green">Fund Now</Button>
+                        </Link>
+                      </WrapItem>
+                    </Wrap>
+                  </Stack>
+                </div>
                 <hr />
                 <Heading mb={1} mt={4} fontSize={"25px"}>
                   Segway SuperScooter GT Series
@@ -498,6 +581,7 @@ function Top10() {
             </Box>
             <Box
               border={"px solid #dddddd"}
+              borderRadius={"lg"}
               transitionProperty={"all"}
               transitionDuration={"250ms"}
               transitionTimingFunction={
@@ -513,17 +597,27 @@ function Top10() {
                 cursor: "pointer",
               }}
             >
-              <Image src="https://c1.iggcdn.com/indiegogo-media-prod-cld/image/upload/c_fill,f_auto,h_310,w_590/opcc1ljfeoaewdfmnrdy.jpg" />
+              <Image
+                src="https://c1.iggcdn.com/indiegogo-media-prod-cld/image/upload/c_fill,f_auto,h_310,w_590/opcc1ljfeoaewdfmnrdy.jpg"
+                borderRadius={"lg"}
+              />
               <Box m={"auto"} maxWidth={"95%"}>
-                <Text
-                  pt={6}
-                  fontWeight={550}
-                  color="rgb(8,131,102)"
-                  filter="auto"
-                  brightness="110%"
-                >
-                  FUNDING
-                </Text>
+                <div className="mt-1 mb-1 flex justify-between items-center">
+                  <Stack direction="row" spacing={4} align="center">
+                    <Button colorScheme="teal" variant="ghost">
+                      FUNDING
+                    </Button>
+                  </Stack>
+                  <Stack direction="column">
+                    <Wrap spacing={4}>
+                      <WrapItem>
+                        <Link to="/FundPage">
+                          <Button colorScheme="green">Fund Now</Button>
+                        </Link>
+                      </WrapItem>
+                    </Wrap>
+                  </Stack>
+                </div>
                 <hr />
                 <Heading mb={1} mt={4} fontSize={"25px"}>
                   Pamu Slide 2
@@ -560,6 +654,7 @@ function Top10() {
             </Box>
             <Box
               border={"px solid #dddddd"}
+              borderRadius={"lg"}
               transitionProperty={"all"}
               transitionDuration={"250ms"}
               transitionTimingFunction={
@@ -575,17 +670,27 @@ function Top10() {
                 cursor: "pointer",
               }}
             >
-              <Image src="https://c1.iggcdn.com/indiegogo-media-prod-cld/image/upload/c_fill,f_auto,h_310,w_590/sfaujwtwbfjnf1zln2ol.jpg" />
+              <Image
+                src="https://c1.iggcdn.com/indiegogo-media-prod-cld/image/upload/c_fill,f_auto,h_310,w_590/sfaujwtwbfjnf1zln2ol.jpg"
+                borderRadius={"lg"}
+              />
               <Box m={"auto"} maxWidth={"95%"}>
-                <Text
-                  pt={6}
-                  fontWeight={550}
-                  color="rgb(8,131,102)"
-                  filter="auto"
-                  brightness="110%"
-                >
-                  FUNDING
-                </Text>
+                <div className="mt-1 mb-1 flex justify-between items-center">
+                  <Stack direction="row" spacing={4} align="center">
+                    <Button colorScheme="teal" variant="ghost">
+                      FUNDING
+                    </Button>
+                  </Stack>
+                  <Stack direction="column">
+                    <Wrap spacing={4}>
+                      <WrapItem>
+                        <Link to="/FundPage">
+                          <Button colorScheme="green">Fund Now</Button>
+                        </Link>
+                      </WrapItem>
+                    </Wrap>
+                  </Stack>
+                </div>
                 <hr />
                 <Heading mb={1} mt={4} fontSize={"25px"}>
                   SPLACH TWIN: A Premium Dual Motor Budget Scooter
@@ -622,6 +727,7 @@ function Top10() {
             </Box>
             <Box
               border={"px solid #dddddd"}
+              borderRadius={"lg"}
               transitionProperty={"all"}
               transitionDuration={"250ms"}
               transitionTimingFunction={
@@ -637,17 +743,27 @@ function Top10() {
                 cursor: "pointer",
               }}
             >
-              <Image src="https://c1.iggcdn.com/indiegogo-media-prod-cld/image/upload/c_fill,f_auto,h_310,w_590/mkvsitirjoi2skrenaym.jpg" />
+              <Image
+                src="https://c1.iggcdn.com/indiegogo-media-prod-cld/image/upload/c_fill,f_auto,h_310,w_590/mkvsitirjoi2skrenaym.jpg"
+                borderRadius={"lg"}
+              />
               <Box m={"auto"} maxWidth={"95%"}>
-                <Text
-                  pt={6}
-                  fontWeight={550}
-                  color="rgb(8,131,102)"
-                  filter="auto"
-                  brightness="110%"
-                >
-                  FUNDING
-                </Text>
+                <div className="mt-1 mb-1 flex justify-between items-center">
+                  <Stack direction="row" spacing={4} align="center">
+                    <Button colorScheme="teal" variant="ghost">
+                      FUNDING
+                    </Button>
+                  </Stack>
+                  <Stack direction="column">
+                    <Wrap spacing={4}>
+                      <WrapItem>
+                        <Link to="/FundPage">
+                          <Button colorScheme="green">Fund Now</Button>
+                        </Link>
+                      </WrapItem>
+                    </Wrap>
+                  </Stack>
+                </div>
                 <hr />
                 <Heading mb={1} mt={4} fontSize={"25px"}>
                   Speede - Advanced Home Gym for Faster Results

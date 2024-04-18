@@ -1,4 +1,7 @@
 import { useState } from "react";
+import { Tag, TagLabel, TagRightIcon, HStack } from "@chakra-ui/react";
+import { MdSettings } from "react-icons/md";
+
 import { Progress } from "@chakra-ui/react";
 import "./slider2.css";
 
@@ -138,7 +141,14 @@ function Slider2() {
   // console.log(count, count1, count2, count3);
   return (
     <>
-      <h2 className="PopularProjects">Popular Projects</h2>
+      <HStack className="mt-2 mb-4">
+        <Tag size={"lg"} variant="outline" colorScheme="blue">
+          <TagRightIcon as={MdSettings} />
+          <TagLabel className="pl-2"> Popular Projects</TagLabel>
+          <TagRightIcon as={MdSettings} />
+        </Tag>
+      </HStack>
+
       <div className="displayslider">
         <button
           className="prenex1"
