@@ -24,7 +24,7 @@
 										} ?>">
 					<label class="control-label">Profile Photo</label>
 					<input type="file" name="profpic">
-					<span class="help-block">*.jpg, *.gif, *.png (less than 1MB)</span>
+					<span class="help-block">*.jpg, *.gif (less than 1MB)</span>
 					<?php if (isset($profpicError)) : ?>
 						<span class="help-block"><?php echo $profpicError ?></span>
 					<?php endif ?>

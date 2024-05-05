@@ -141,13 +141,13 @@
               <p class="text-muted">of the project is completed</p>
             <?php elseif ($row['status'] == 'completed') : ?>
               <h2 class="text-success">Completed</h2>
-              <p class="text-muted">this project is completed on <?php echo date('Y-m-d', strtotime($row['actualcompletiontime'])); ?></p>
+              <p class="text-muted">This project is completed on <?php echo date('Y-m-d', strtotime($row['actualcompletiontime'])); ?></p>
             <?php elseif ($row['status'] == 'failed') : ?>
               <h2 class="text-danger">Failed</h2>
-              <p class="text-muted">this project failed</p>
+              <p class="text-muted">This Project Failed</p>
             <?php endif; ?>
             <h2 class="text-info"><?php echo $backerCount; ?></h2>
-            <p class="text-muted">backers</p>
+            <p class="text-muted">Total Backers</p>
           </div>
           <div class="row">
             <h2 class="text-primary"><?php echo date('Y-m-d', strtotime($row['endtime'])); ?></h2>
@@ -182,6 +182,9 @@
               </div>
               <h2><button type="submit" role="button" class="btn btn-success btn-lg btn-block">Back this project</button></h2>
             </form>
+
+
+
           <?php break;
           case 'progressing': ?>
             <h2><a href="#" class="btn btn-lg btn-success btn-block disabled" role="button">Back this project</a></h2>
@@ -226,6 +229,9 @@
               </form>
             <?php endif ?>
         <?php endswitch; ?>
+
+
+
         <?php if ($mode == 'user') : ?>
           <?php if (isset($hasLiked) && $hasLiked) : ?>
             <a href="<?php echo APP_URL ?>/project/unlike/<?php echo $row['pid'] ?>" class="btn btn-lg btn-default btn-block active" role="button">Liked</a>
